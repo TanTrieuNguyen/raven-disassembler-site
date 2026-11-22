@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RAVEN is a native binary analysis workbench. Download the GUI, headless CLI and MCP server for Windows, macOS and Linux.">
+  <meta name="theme-color" content="#11161d">
+  <link rel="icon" href="assets/raven-logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+  <title>RAVEN Disassembler · Binary analysis workbench</title>
+  <script src="downloads.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <nav class="wrap navigation" aria-label="Main">
+      <a class="brand" href="./" aria-label="RAVEN Disassembler home"><span class="mark"><img src="assets/raven-logo.jpg" alt=""></span><span>RAVEN <small>Disassembler</small></span></a>
+      <div class="navlinks"><a href="#workbench">Workbench</a><a class="outline" href="#downloads">Downloads</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow">DESKTOP BINARY ANALYSIS</p>
+        <h1>Inspect binaries.<br>Follow the code.</h1>
+        <p class="lead">RAVEN brings disassembly, control-flow graphs, hex inspection, and pseudocode into a native workbench. The same engine powers its headless CLI and MCP server.</p>
+        <div class="hero-actions"><a class="primary" href="#downloads">Download RAVEN</a><a class="plain" href="#workbench">Explore the workbench</a></div>
+        <p class="platform-line">Windows · macOS · Linux</p>
+      </div>
+      <figure class="preview" id="workbench">
+        <div class="preview-bar"><span>WORKBENCH</span><span>Mach-O sample</span></div>
+        <img src="assets/workbench.png" alt="RAVEN displaying the transform function in a Mach-O file, with a functions navigator, assembly listing and references panel." width="3104" height="1884" fetchpriority="high">
+        <figcaption>RAVEN running on macOS with a sample binary.</figcaption>
+      </figure>
+    </section>
+    <section class="capabilities wrap" aria-labelledby="capabilities-title">
+      <div class="section-heading">
+        <h2 id="capabilities-title">One engine, three ways to work</h2>
+        <p>Load ELF, PE/COFF, thin Mach-O, and raw binaries. Analyze x86, x86-64, ARM, Thumb, and ARM64 code from any supported host.</p>
+      </div>
+      <div class="feature-grid">
+        <article><p class="eyebrow">DESKTOP</p><h3>Follow references</h3><p>Jump between instructions, the control-flow graph and the hex view. Keep function names and notes with revisioned annotations.</p></article>
+        <article><p class="eyebrow">HEADLESS</p><h3>Inspect from the terminal</h3><p>Use the CLI for JSON reports, batch analysis, embedded DWARF types and supported Linux ELF core dumps.</p></article>
+        <article><p class="eyebrow">MCP</p><h3>Connect your tools</h3><p>Use 30 stdio tools to query the analysis engine. Share revisioned notes with teammates through a project-scoped session over SSH.</p></article>
+      </div>
+    </section>
+    <section class="downloads" id="downloads" aria-labelledby="downloads-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">INSTALLERS</p><h2 id="downloads-title">Download RAVEN</h2></div>
+          <p>Choose your operating system and the CPU of the machine running RAVEN. Each package includes the GUI, CLI and MCP server.</p>
+        </div>
+        <div class="filter" aria-label="Filter by operating system" hidden>
+          <button type="button" aria-pressed="true" data-filter="all">All platforms</button>
+          <button type="button" aria-pressed="false" data-filter="windows">Windows</button>
+          <button type="button" aria-pressed="false" data-filter="macos">macOS</button>
+          <button type="button" aria-pressed="false" data-filter="linux">Linux</button>
+        </div>
+        <p id="release-status" class="release-status" role="status">Loading release availability.</p>
+        <noscript><p>See <a href="https://github.com/TanTrieuNguyen/raven-disassembler-site/releases">GitHub Releases</a> for available installers and checksums.</p></noscript>
+        <div class="platform-grid">
+          <article data-platform="windows">
+            <h3>Windows</h3>
+            <p>Setup executable or portable ZIP.</p>
+            <ul>
+              <li><span><strong>x64</strong><small>Windows 10+</small></span><span data-asset="x86_64-pc-windows-msvc-setup.exe"></span><span data-asset="x86_64-pc-windows-msvc.zip"></span></li>
+              <li><span><strong>ARM64</strong><small>Windows 11</small></span><span data-asset="aarch64-pc-windows-msvc-setup.exe"></span><span data-asset="aarch64-pc-windows-msvc.zip"></span></li>
+              <li><span><strong>x86</strong><small>32-bit Windows 10</small></span><span data-asset="i686-pc-windows-msvc-setup.exe"></span><span data-asset="i686-pc-windows-msvc.zip"></span></li>
+            </ul>
+          </article>
+          <article data-platform="macos">
+            <h3>macOS</h3>
+            <p>Open the disk image and drag RAVEN to Applications.</p>
+            <ul>
+              <li><span><strong>Apple Silicon</strong><small>ARM64 · macOS 11+</small></span><span data-asset="aarch64-apple-darwin.dmg"></span></li>
+              <li><span><strong>Intel</strong><small>x64 · macOS 11+</small></span><span data-asset="x86_64-apple-darwin.dmg"></span></li>
+            </ul>
+          </article>
+          <article data-platform="linux">
+            <h3>Linux</h3>
+            <p>Install the DEB or extract the portable archive.</p>
+            <ul>
+              <li><span><strong>x64</strong><small>amd64</small></span><span data-asset="x86_64-unknown-linux-gnu.deb"></span><span data-asset="x86_64-unknown-linux-gnu.tar.gz"></span></li>
+              <li><span><strong>ARM64</strong><small>aarch64</small></span><span data-asset="aarch64-unknown-linux-gnu.deb"></span><span data-asset="aarch64-unknown-linux-gnu.tar.gz"></span></li>
+              <li><span><strong>x86</strong><small>i686</small></span><span data-asset="i686-unknown-linux-gnu.deb"></span><span data-asset="i686-unknown-linux-gnu.tar.gz"></span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="release-links"><a href="https://github.com/TanTrieuNguyen/raven-disassembler-site/releases">Release notes and SHA-256 checksums</a></div>
+        <details><summary>Installation and compatibility</summary><p>Windows installers are unsigned. macOS apps are ad-hoc signed and are not notarized. Linux packages target an Ubuntu 22.04-compatible runtime. Native pseudocode currently covers a subset of x86-64 integer functions. Broader pseudocode uses an optional Ghidra installation.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>RAVEN Disassembler</span><a href="https://github.com/TanTrieuNguyen/raven-disassembler-site">Website repository</a></footer>
+</body>
+</html>
