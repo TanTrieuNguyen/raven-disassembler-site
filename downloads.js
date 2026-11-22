@@ -32,7 +32,7 @@ async function installLinks() {
       if (!Object.prototype.hasOwnProperty.call(release.assets, file)) continue;
       const link = document.createElement("a");
       link.className = "asset";
-      link.href = `https://github.com/TanTrieuNguyen/raven-disassembler-site/releases/download/${release.version}/${file}`;
+      link.href = `https://github.com/TanTrieuNguyen/raven-disassembler/releases/download/${release.version}/${file}`;
       link.textContent = file.endsWith(".exe") ? "Setup" :
         file.endsWith(".tar.gz") ? "tar.gz" : file.slice(file.lastIndexOf(".") + 1).toUpperCase();
       const platform = slot.closest("article").querySelector("h3").textContent;

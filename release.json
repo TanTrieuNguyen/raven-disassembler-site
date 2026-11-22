@@ -1,1 +1,19 @@
-{"version":null,"assets":{}}
+{
+  "version": "v0.2.0",
+  "assets": {
+    "RAVEN-Disassembler-aarch64-apple-darwin.dmg": "f244ae6aa847e9e276fb789b4b70b7be3fe747f847ae42aedf5bebda59b3e5ec",
+    "RAVEN-Disassembler-aarch64-pc-windows-msvc-setup.exe": "0b827a012e6272d9a1e0b84fcfd089ee3f576f0ad37a2cc5ba88d63b139148a4",
+    "RAVEN-Disassembler-aarch64-pc-windows-msvc.zip": "f77d97d01f84b4d0d25c8dd048adcb11216f82e93697f92eb5bb761ae3c98d9a",
+    "RAVEN-Disassembler-aarch64-unknown-linux-gnu.deb": "66856f3a909a423692ef0d91d777e4b5f574bb28de2a56244907e9f08cf9ee53",
+    "RAVEN-Disassembler-aarch64-unknown-linux-gnu.tar.gz": "687163fa0ebd6eb5e0df8145eeb1bc9be5365578ccd1908e0b6fb2e2b591c8cd",
+    "RAVEN-Disassembler-i686-pc-windows-msvc-setup.exe": "342990643625bfda32fd5fd6a38673eaf47302a92468055e9e2f2c900de6bb5d",
+    "RAVEN-Disassembler-i686-pc-windows-msvc.zip": "460a523e94b26f80c36dec0fe2491c5801674a611d4bebb6edb417f4fa6fc57d",
+    "RAVEN-Disassembler-i686-unknown-linux-gnu.deb": "be65218b87ee8ac07f0b4e0e49549a3e55fb4b2252efb89bfce8f3ea438a299a",
+    "RAVEN-Disassembler-i686-unknown-linux-gnu.tar.gz": "cda64f2447d398faf903f4d53d7094bb11e236a60b75d3ee30f40ae2406d50b6",
+    "RAVEN-Disassembler-x86_64-apple-darwin.dmg": "1462c4df60fd2fa266cad9c8dcf9a3a48eb82e411afe2fe506ee90857fba93a6",
+    "RAVEN-Disassembler-x86_64-pc-windows-msvc-setup.exe": "a73ca5ab619e261ecf2793ef50cf00f8844b5a0e0d9a49ff610c570b50d6b752",
+    "RAVEN-Disassembler-x86_64-pc-windows-msvc.zip": "9745e77837de5ddd811625af2337567c98f895f6b32504616e3048c15fdf2464",
+    "RAVEN-Disassembler-x86_64-unknown-linux-gnu.deb": "3833a1e96030c3b0f276bf0c617f1a88a6d7d1cc090f126c3800aca9762fcce5",
+    "RAVEN-Disassembler-x86_64-unknown-linux-gnu.tar.gz": "d8186c543b2721e712314ea09c4db83842cf88b1ee956fc474d130ec94a4a73d"
+  }
+}
