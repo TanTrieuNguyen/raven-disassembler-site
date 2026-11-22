@@ -29,12 +29,12 @@ async function installLinks() {
     let count = 0;
     for (const slot of document.querySelectorAll("[data-asset]")) {
       const file = `RAVEN-Disassembler-${slot.dataset.asset}`;
-      if (!Object.hasOwn(release.assets, file)) continue;
+      if (!Object.prototype.hasOwnProperty.call(release.assets, file)) continue;
       const link = document.createElement("a");
       link.className = "asset";
       link.href = `https://github.com/TanTrieuNguyen/raven-disassembler-site/releases/download/${release.version}/${file}`;
       link.textContent = file.endsWith(".exe") ? "Setup" :
-        file.endsWith(".tar.gz") ? "tar.gz" : file.split(".").at(-1).toUpperCase();
+        file.endsWith(".tar.gz") ? "tar.gz" : file.slice(file.lastIndexOf(".") + 1).toUpperCase();
       const platform = slot.closest("article").querySelector("h3").textContent;
       const cpu = slot.closest("li").querySelector("strong").textContent;
       link.setAttribute("aria-label", `Download ${platform} ${cpu} ${link.textContent}`);
